@@ -1,2 +1,13 @@
-﻿  Source.cpp
-  SFML.vcxproj -> C:\Users\Marcelo\Desktop\SFML\x64\Debug\SFML.exe
+﻿  DrawText.cpp
+  GetTetromino.cpp
+  GetWallKickData.cpp
+  Main.cpp
+C:\Users\Marcelo\Documents\GitHub\Tetris_sfml\Tetris\SFML\SFML\Source\Main.cpp(90,23): warning C4244: 'inicializando': conversión de '_Rep' a 'unsigned int'; posible pérdida de datos
+          with
+          [
+              _Rep=__int64
+          ]
+  Tetromino.cpp
+  Generando código...
+  LINK : no se encontró C:\Users\Marcelo\Documents\GitHub\Tetris_sfml\Tetris\SFML\x64\Debug\SFML.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
+  SFML.vcxproj -> C:\Users\Marcelo\Documents\GitHub\Tetris_sfml\Tetris\SFML\x64\Debug\SFML.exe

@@ -18,6 +18,23 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\DrawText.cpp" />
+    <ClCompile Include="Source\GetTetromino.cpp" />
+    <ClCompile Include="Source\GetWallKickData.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\Tetromino.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Headers\DrawText.hpp" />
+    <ClInclude Include="Source\Headers\GetTetromino.hpp" />
+    <ClInclude Include="Source\Headers\GetWallKickData.hpp" />
+    <ClInclude Include="Source\Headers\Global.hpp" />
+    <ClInclude Include="Source\Headers\Tetromino.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Source\Resources\Images\Font.png" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -143,9 +160,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
