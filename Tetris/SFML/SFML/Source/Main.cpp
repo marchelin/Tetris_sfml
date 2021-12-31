@@ -62,21 +62,35 @@ int main()
 
 	sf::RenderWindow window(sf::VideoMode(2 * CELL_SIZE * COLUMNS * SCREEN_RESIZE, CELL_SIZE * ROWS * SCREEN_RESIZE), "Tetris", sf::Style::Close);
 	window.setView(sf::View(sf::FloatRect(0, 0, 2 * CELL_SIZE * COLUMNS, CELL_SIZE * ROWS)));
+	window.setFramerateLimit(60);
 
+	// Text
+	sf::Text score;
+	sf::Font font;
+	font.loadFromFile("Resources/Fonts/Pixeled.ttf");
+	score.setFont(font);
+	score.setCharacterSize(15);
+	score.setFillColor(sf::Color::White);
+	score.setPosition(10, 25);
+	sf::Vector2<float> score_scale(1.5f, 1.5f);
+	score.setScale(score_scale);
+	score.setString("Lines: 0");
 
-	// Sound
-	sf::SoundBuffer buffer;
-	sf::Sound sound;
-	if (buffer.loadFromFile("Resources/Sound/Music/EnemyHit.wav"))
-	{
-		sound.setBuffer(buffer);
-		sound.play();
-	}
 	// Music
 	sf::Music music;
 	if (music.openFromFile("Resources/Sound/Music/TetrisTheme.wav"))
 	{
+		music.setVolume(25.f);
+		music.setLoop(true);
 		music.play();
+	}
+
+	// Sound FX
+	sf::SoundBuffer buffer;
+	sf::Sound sound;
+	if (buffer.loadFromFile("Resources/Sound/FX/line.wav"))
+	{
+		sound.setBuffer(buffer);
 	}
 
 	// Tetromino Random Shape
@@ -135,6 +149,7 @@ int main()
 							case sf::Keyboard::Space:
 							{
 								hard_drop_pressed = 0;
+								sound.play();
 							}
 						}
 					}

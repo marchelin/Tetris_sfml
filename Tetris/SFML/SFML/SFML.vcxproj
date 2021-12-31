@@ -33,13 +33,18 @@
     <ClInclude Include="Source\Headers\Tetromino.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Source\Resources\Fonts\Font.png" />
     <Image Include="Source\Resources\Images\Font.png" />
+    <Image Include="Source\Resources\Images\tetris_tile.png" />
   </ItemGroup>
   <ItemGroup>
-    <Media Include="Source\Resources\Sound\Music\Hit.wav" />
+    <Media Include="Source\Resources\Sound\FX\fall.wav" />
+    <Media Include="Source\Resources\Sound\FX\line.wav" />
+    <Media Include="Source\Resources\Sound\FX\tetris.wav" />
     <Media Include="Source\Resources\Sound\Music\TetrisTheme.wav" />
   </ItemGroup>
   <ItemGroup>
+    <Font Include="Source\Resources\Fonts\Pixeled.ttf" />
     <Font Include="Source\Resources\Images\Pixeled.ttf" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

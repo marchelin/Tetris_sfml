@@ -52,16 +52,29 @@
     <Image Include="Source\Resources\Images\Font.png">
       <Filter>Archivos de recursos</Filter>
     </Image>
+    <Image Include="Source\Resources\Fonts\Font.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Source\Resources\Images\tetris_tile.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Media Include="Source\Resources\Sound\Music\TetrisTheme.wav">
       <Filter>Archivos de recursos</Filter>
     </Media>
-    <Media Include="Source\Resources\Sound\Music\Hit.wav">
+    <Media Include="Source\Resources\Sound\FX\fall.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="Source\Resources\Sound\FX\line.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="Source\Resources\Sound\FX\tetris.wav">
       <Filter>Archivos de recursos</Filter>
     </Media>
   </ItemGroup>
   <ItemGroup>
     <Font Include="Source\Resources\Images\Pixeled.ttf" />
+    <Font Include="Source\Resources\Fonts\Pixeled.ttf" />
   </ItemGroup>
 </Project>

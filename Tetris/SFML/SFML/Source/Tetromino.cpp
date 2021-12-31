@@ -38,7 +38,7 @@ bool Tetromino::move_down(const std::vector<std::vector<unsigned char>>& i_matri
 
 bool Tetromino::reset(unsigned char i_shape, const std::vector<std::vector<unsigned char>>& i_matrix)
 {
-	//Reset variables
+	// Reset variables
 	rotation = 0;
 	shape = i_shape;
 
